@@ -63,6 +63,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 "" Vim-Session
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'xolox/vim-session'
+NeoBundle 'rking/ag.vim'
 
 if v:version >= 703
   NeoBundle 'Shougo/vimshell.vim'
@@ -161,6 +162,8 @@ set shell=/bin/sh
 
 let mapleader="\\"
 let maplocalleader="\\"
+imap \\ <Esc>
+
 
 " session management
 let g:session_directory = "~/.config/nvim/session"
