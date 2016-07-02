@@ -49,6 +49,8 @@ NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle "Yggdroot/indentLine"
+NeoBundle "douglasjacobsen/vim-bufexplorer"
+NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
       \     'windows' : 'tools\\update-dll-mingw',
@@ -133,7 +135,7 @@ set shiftwidth=4
 set expandtab
 
 "" Map leader to ,
-# let mapleader=','
+""" let mapleader=','
 
 "" Enable hidden buffers
 set hidden
@@ -156,6 +158,9 @@ set noswapfile
 set fileformats=unix,dos,mac
 set showcmd
 set shell=/bin/sh
+
+let mapleader="\\"
+let maplocalleader="\\"
 
 " session management
 let g:session_directory = "~/.config/nvim/session"
@@ -361,7 +366,9 @@ endif
 
 cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 noremap <leader>b :CtrlPBuffer<CR>
-let g:ctrlp_map = '<leader>e'
+noremap <leader>r :CtrlPMRUFiles<CR>
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_open_new_file = 'r'
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 
