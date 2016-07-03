@@ -76,6 +76,7 @@ if v:version >= 704
 endif
 
 NeoBundle 'honza/vim-snippets'
+NeoBundle 'vim-scripts/ruby-matchit'
 
 "" Color
 NeoBundle 'tomasr/molokai'
@@ -163,6 +164,7 @@ set shell=/bin/sh
 let mapleader="\\"
 let maplocalleader="\\"
 imap \\ <Esc>
+map <S-s> :write<CR>
 
 
 " session management
@@ -369,6 +371,7 @@ endif
 
 cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 noremap <leader>b :CtrlPBuffer<CR>
+noremap <leader><leader> :CtrlPBuffer<CR>
 noremap <leader>r :CtrlPMRUFiles<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
