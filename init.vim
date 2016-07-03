@@ -34,7 +34,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "" NeoBundle install packages
 "*****************************************************************************
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'vim-scripts/Conque-Shell'
 NeoBundle 'jistr/vim-nerdtree-tabs.git'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-fugitive'
