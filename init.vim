@@ -248,6 +248,7 @@ cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
 cabbrev t term
+cabbrev tgp :term git push
 
 "" NERDTree configuration
 let g:NERDTreeChDirMode=2
