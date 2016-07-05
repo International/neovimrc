@@ -260,7 +260,8 @@ let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 50
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
-noremap <F3> :NERDTreeToggle<CR>
+noremap <F3> :NERDTreeFind<CR>
+noremap <F5> :CtrlPClearCache<CR>
 
 " grep.vim
 nnoremap <silent> <leader>f :Rgrep<CR>
