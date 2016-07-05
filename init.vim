@@ -373,7 +373,7 @@ endif
 
 cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 noremap <leader>b :CtrlPBuffer<CR>
-noremap // :CtrlPBuffer<CR>
+noremap // :BufExplorer<CR>
 noremap <leader>r :CtrlPMRUFiles<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
