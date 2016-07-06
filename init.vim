@@ -35,6 +35,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "*****************************************************************************
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs.git'
+NeoBundle 'altercation/vim-colors-solarized.git'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
@@ -259,6 +260,8 @@ let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 50
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
+set background=dark
+color solarized
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 noremap <F3> :NERDTreeFind<CR>
 noremap <F5> :CtrlPClearCache<CR>
