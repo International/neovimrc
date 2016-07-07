@@ -123,6 +123,7 @@ NeoBundleCheck
 "*****************************************************************************
 "" Basic Setup
 "*****************************************************************************"
+" set autochdir
 "" Encoding
 set encoding=utf-8
 set fileencoding=utf-8
@@ -133,9 +134,14 @@ set backspace=indent,eol,start
 
 "" Tabs. May be overriten by autocmd rules
 set tabstop=2
+set listchars=tab:▹\ ,trail:·,nbsp:⚋
+set list
+
 set softtabstop=2
 set shiftwidth=2
 set expandtab
+set smartindent
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 "" Map leader to ,
 """ let mapleader=','
@@ -249,6 +255,8 @@ cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
 cabbrev t term
+cabbrev g Gst
+cabbrev capv cap vagrant
 cabbrev tgp term git push
 
 "" NERDTree configuration
