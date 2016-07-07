@@ -137,10 +137,7 @@ set tabstop=2
 set listchars=tab:▹\ ,trail:·,nbsp:⚋
 set list
 
-set softtabstop=2
-set shiftwidth=2
-set expandtab
-set smartindent
+
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 "" Map leader to ,
@@ -158,6 +155,11 @@ set smartcase
 "" Encoding
 set bomb
 set binary
+
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+set smartindent
 
 
 "" Directories for swp files
@@ -579,3 +581,4 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
+
