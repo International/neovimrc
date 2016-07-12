@@ -34,6 +34,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "" NeoBundle install packages
 "*****************************************************************************
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'craigemery/vim-autotag'
 NeoBundle 'jistr/vim-nerdtree-tabs.git'
 NeoBundle 'altercation/vim-colors-solarized.git'
 NeoBundle 'tpope/vim-commentary'
@@ -269,6 +270,8 @@ let g:NERDTreeShowBookmarks=1
 let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 50
+let NERDTreeShowHidden=1
+
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 set background=dark
 color solarized
@@ -408,6 +411,7 @@ let g:syntastic_style_error_symbol = '✗'
 let g:syntastic_style_warning_symbol = '⚠'
 let g:syntastic_auto_loc_list=1
 let g:syntastic_aggregate_errors = 1
+let g:syntastic_java_javac_autoload_maven_classpath = 0
 
 " Tagbar
 nmap <silent> <F4> :TagbarToggle<CR>
